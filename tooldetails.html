@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Toolbox - Tool Details</title>
+
+    <link rel="stylesheet" href="styles/tooldetails.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+
+            <a href="home.html" class="logo">
+                <span class="logo-icon">🧰</span>
+                <h2>Toolbox</h2>
+            </a>
+
+            <nav class="top-nav" aria-label="Main navigation">
+                <a href="home.html">Home</a>
+                <a href="project.html">Projects</a>
+                <a href="tools.html" class="active">Tools</a>
+                <a href="cart.html">Cart</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Breadcrumb Navigation -->
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+            <a href="tools.html">Tools</a>
+            <span>›</span>
+            <span>Power Tools</span>
+        </nav>
+
+        <!-- Product Details -->
+        <section class="product-section">
+
+            <!-- Product Image -->
+            <div class="product-image">
+
+                <img
+                    id="product-image"
+                    src="images/drill.png"
+                    alt="18V cordless drill"
+                >
+
+            </div>
+
+            <!-- Product Information -->
+            <div class="product-info">
+
+                <p class="product-category">
+                    GREAT FOR HANGING FLOATING SHELVES
+                </p>
+
+                <h1 id="product-name">
+                    18V Cordless Drill
+                </h1>
+
+                <div class="rating">
+                    <span class="stars">★</span>
+                    4.8 | 128 reviews
+                    <span class="stock">• In stock</span>
+                </div>
+
+                <h2 class="price" id="product-price">
+                    $89.00
+                </h2>
+
+                <p class="price-note">
+                    Battery + charger included
+                </p>
+
+                <p class="description">
+                    Power for your projects, without the cord.
+                    Drill into wood and metal, or drive screws
+                    with precise, comfortable control.
+                </p>
+
+                <!-- Specifications -->
+                <div class="specifications">
+
+                    <div class="spec">
+                        <strong>18V</strong>
+                        <span>Lithium-ion</span>
+                    </div>
+
+                    <div class="spec">
+                        <strong>35 Nm</strong>
+                        <span>Max torque</span>
+                    </div>
+
+                    <div class="spec">
+                        <strong>1.2 kg</strong>
+                        <span>Lightweight</span>
+                    </div>
+
+                </div>
+
+                <!-- Additional Information -->
+                <div class="product-benefits">
+
+                    <h3>Ready to get to work</h3>
+
+                    <p>
+                        Includes drill, 18V battery, charger,
+                        and double-ended driver bit.
+                        20 clutch settings, 2 speeds,
+                        and a 10 mm keyless chuck.
+                    </p>
+
+                    <p class="delivery">
+                        🚚 Free delivery Oct 26–28
+                    </p>
+
+                    <p class="warranty">
+                        ✓ 30-day returns and 2-year warranty
+                    </p>
+
+                </div>
+
+                <!-- Quantity and Cart -->
+                <div class="purchase-section">
+
+                    <div class="quantity-selector">
+
+                        <button
+                            type="button"
+                            id="decrease"
+                            aria-label="Decrease quantity">
+                            −
+                        </button>
+
+                        <span id="quantity">1</span>
+
+                        <button
+                            type="button"
+                            id="increase"
+                            aria-label="Increase quantity">
+                            +
+                        </button>
+
+                    </div>
+
+                    <button
+                        type="button"
+                        id="add-to-cart"
+                        class="add-cart-button">
+                        Add to Cart 🛒
+                    </button>
+
+                </div>
+
+                <p id="cart-message" aria-live="polite"></p>
+
+                <a href="tools.html" class="back-link">
+                    ← Back to All Tools
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Toolbox. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="scripts/tooldetails.js" defer></script>
+
+</body>
+</html>

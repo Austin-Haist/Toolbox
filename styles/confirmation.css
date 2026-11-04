@@ -1,0 +1,617 @@
+
+/* ==============================
+   GENERAL STYLES
+============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f8fc;
+    color: #243b5a;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* ==============================
+   HEADER
+============================== */
+
+header {
+    background-color: white;
+    border-bottom: 1px solid #e0e7f0;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 48px;
+    height: 48px;
+
+    background-color: #2e6cff;
+    border-radius: 12px;
+
+    font-size: 25px;
+}
+
+.logo h2 {
+    font-size: 28px;
+}
+
+.top-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.top-nav a {
+    color: #7890ac;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+.top-nav a:hover {
+    color: #2e6cff;
+}
+
+/* ==============================
+   MAIN CONTENT
+============================== */
+
+main {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 30px;
+}
+
+.confirmation-container {
+    max-width: 750px;
+    margin: auto;
+}
+
+/* ==============================
+   CONFIRMATION HERO
+============================== */
+
+.confirmation-hero {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.confirmation-image {
+    width: 100%;
+    max-width: 550px;
+    height: 250px;
+
+    object-fit: contain;
+
+    background-color: #e4f0f7;
+    border-radius: 20px;
+
+    margin: 0 auto 30px;
+}
+
+.confirmation-hero h1 {
+    font-size: clamp(30px, 4vw, 42px);
+    margin-bottom: 10px;
+}
+
+.confirmation-message {
+    color: #7890ac;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.order-number {
+    display: inline-block;
+
+    background-color: #eaf0ff;
+    color: #2e6cff;
+
+    padding: 8px 18px;
+    border-radius: 30px;
+
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.order-number[hidden] {
+    display: none;
+}
+
+/* ==============================
+   DELIVERY CARD
+============================== */
+
+.delivery-card {
+    background-color: white;
+    border: 1px solid #e0e7f0;
+    border-radius: 18px;
+
+    padding: 30px;
+    margin-bottom: 25px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+}
+
+.delivery-heading {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    margin-bottom: 30px;
+}
+
+.delivery-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 60px;
+    height: 60px;
+
+    background-color: #eaf0ff;
+    border-radius: 15px;
+
+    font-size: 30px;
+}
+
+.small-label {
+    color: #7890ac;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.delivery-heading h2 {
+    font-size: 23px;
+}
+
+/* ==============================
+   ORDER PROGRESS
+============================== */
+
+.progress-tracker {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    margin-bottom: 20px;
+}
+
+.progress-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    color: #7890ac;
+    font-size: 13px;
+    text-align: center;
+}
+
+.progress-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 35px;
+    height: 35px;
+
+    border: 2px solid #dce5f0;
+    border-radius: 50%;
+
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.progress-step.active {
+    color: #2e6cff;
+}
+
+.progress-step.active .progress-circle {
+    background-color: #2e6cff;
+    border-color: #2e6cff;
+    color: white;
+}
+
+.progress-line {
+    flex: 1;
+    height: 2px;
+
+    background-color: #dce5f0;
+    margin: 17px 10px 0;
+}
+
+.tracking-message {
+    color: #7890ac;
+    font-size: 13px;
+    text-align: center;
+}
+
+/* ==============================
+   ORDER SUMMARY
+============================== */
+
+.order-summary {
+    background-color: white;
+    border: 1px solid #e0e7f0;
+    border-radius: 18px;
+
+    padding: 30px;
+    margin-bottom: 25px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+}
+
+.order-summary h2 {
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.order-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    margin-bottom: 20px;
+}
+
+.order-product-image {
+    width: 100px;
+    height: 100px;
+
+    object-fit: contain;
+
+    background-color: #dcebf5;
+    border-radius: 12px;
+}
+
+.order-product-details {
+    flex: 1;
+    min-width: 0;
+}
+
+.order-product-details h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.order-product-details p {
+    color: #7890ac;
+    font-size: 14px;
+}
+
+.order-item strong {
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+.summary-divider {
+    border-top: 1px solid #e0e7f0;
+    margin: 20px 0;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.summary-row span:first-child {
+    color: #7890ac;
+}
+
+.free-delivery {
+    color: #21a56a;
+    font-weight: bold;
+}
+
+.total-row {
+    font-size: 22px;
+}
+
+.total-row strong {
+    color: #243b5a;
+}
+
+.no-order {
+    color: #7890ac;
+    padding: 15px 0;
+}
+
+.no-order a {
+    color: #2e6cff;
+    font-weight: bold;
+}
+
+/* ==============================
+   THANK YOU MESSAGE
+============================== */
+
+.thank-you-section {
+    text-align: center;
+    padding: 25px 15px;
+}
+
+.thank-you-section h2 {
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.thank-you-section p {
+    color: #7890ac;
+    font-size: 16px;
+}
+
+/* ==============================
+   ACTION BUTTONS
+============================== */
+
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    margin-top: 15px;
+}
+
+.track-button,
+.projects-button {
+    display: block;
+    width: 100%;
+
+    border-radius: 12px;
+    padding: 17px 25px;
+
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+
+    transition: background-color 0.2s;
+}
+
+.track-button {
+    background-color: #2e6cff;
+    color: white;
+    border: none;
+}
+
+.track-button:hover {
+    background-color: #1855e6;
+}
+
+.track-button:disabled {
+    background-color: #b6c5d9;
+    cursor: not-allowed;
+}
+
+.projects-button {
+    background-color: #eaf0ff;
+    color: #2e6cff;
+    border: 1px solid #dce5f0;
+}
+
+.projects-button:hover {
+    background-color: #dce6ff;
+}
+
+.home-link {
+    color: #7890ac;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+
+    padding: 10px;
+}
+
+.home-link:hover {
+    color: #2e6cff;
+}
+
+/* ==============================
+   FOOTER
+============================== */
+
+footer {
+    padding: 25px;
+    text-align: center;
+
+    background-color: white;
+    border-top: 1px solid #e0e7f0;
+
+    color: #7890ac;
+    font-size: 14px;
+}
+
+/* ==============================
+   TABLET RESPONSIVENESS
+============================== */
+
+@media (max-width: 900px) {
+
+    .top-nav {
+        gap: 18px;
+    }
+
+    .confirmation-container {
+        max-width: 650px;
+    }
+}
+
+/* ==============================
+   MOBILE RESPONSIVENESS
+============================== */
+
+@media (max-width: 600px) {
+
+    /* Header */
+
+    .header-container {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .logo h2 {
+        font-size: 25px;
+    }
+
+    .top-nav {
+        width: 100%;
+        justify-content: space-around;
+        gap: 10px;
+    }
+
+    .top-nav a {
+        font-size: 14px;
+    }
+
+    /* Main */
+
+    main {
+        padding: 20px;
+    }
+
+    /* Confirmation */
+
+    .confirmation-image {
+        height: 190px;
+    }
+
+    .confirmation-hero h1 {
+        font-size: 30px;
+    }
+
+    .confirmation-message {
+        font-size: 16px;
+    }
+
+    /* Delivery */
+
+    .delivery-card {
+        padding: 20px;
+    }
+
+    .delivery-heading h2 {
+        font-size: 20px;
+    }
+
+    .delivery-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+    }
+
+    .progress-step {
+        font-size: 11px;
+    }
+
+    .progress-circle {
+        width: 30px;
+        height: 30px;
+    }
+
+    .progress-line {
+        margin: 15px 5px 0;
+    }
+
+    /* Order Summary */
+
+    .order-summary {
+        padding: 20px;
+    }
+
+    .order-summary h2 {
+        font-size: 22px;
+    }
+
+    .order-product-image {
+        width: 75px;
+        height: 75px;
+    }
+
+    .order-item {
+        gap: 12px;
+    }
+
+    .order-product-details h3 {
+        font-size: 15px;
+    }
+
+    .order-item strong {
+        font-size: 15px;
+    }
+
+    .total-row {
+        font-size: 20px;
+    }
+
+    /* Buttons */
+
+    .track-button,
+    .projects-button {
+        padding: 15px;
+        font-size: 15px;
+    }
+}
+
+/* ==============================
+   SMALL MOBILE SCREENS
+============================== */
+
+@media (max-width: 380px) {
+
+    main {
+        padding: 15px;
+    }
+
+    .order-item {
+        flex-wrap: wrap;
+    }
+
+    .order-item strong {
+        margin-left: auto;
+    }
+}

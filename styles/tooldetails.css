@@ -1,0 +1,522 @@
+
+/* ==============================
+   GENERAL STYLES
+============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f8fc;
+    color: #243b5a;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* ==============================
+   HEADER
+============================== */
+
+header {
+    background-color: white;
+    border-bottom: 1px solid #e0e7f0;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 48px;
+    height: 48px;
+
+    background-color: #2e6cff;
+    border-radius: 12px;
+    font-size: 25px;
+}
+
+.logo h2 {
+    font-size: 28px;
+}
+
+.top-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.top-nav a {
+    color: #7890ac;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+.top-nav a:hover,
+.top-nav a.active {
+    color: #2e6cff;
+}
+
+/* ==============================
+   MAIN CONTENT
+============================== */
+
+main {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px;
+}
+
+/* ==============================
+   BREADCRUMBS
+============================== */
+
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 30px;
+    font-size: 15px;
+    color: #7890ac;
+}
+
+.breadcrumbs a {
+    color: #2e6cff;
+}
+
+.breadcrumbs a:hover {
+    text-decoration: underline;
+}
+
+/* ==============================
+   PRODUCT LAYOUT
+============================== */
+
+.product-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+/* ==============================
+   PRODUCT IMAGE
+============================== */
+
+.product-image {
+    flex: 1;
+    min-width: 0;
+
+    background-color: #dcebf5;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.product-image img {
+    width: 100%;
+    height: 480px;
+    object-fit: contain;
+}
+
+/* ==============================
+   PRODUCT INFORMATION
+============================== */
+
+.product-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.product-category {
+    color: #2e6cff;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.product-info h1 {
+    font-size: clamp(30px, 3vw, 42px);
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.rating {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+
+    font-size: 14px;
+    color: #7890ac;
+    margin-bottom: 20px;
+}
+
+.stars {
+    color: #2e6cff;
+    font-size: 20px;
+}
+
+.stock {
+    color: #21a56a;
+    font-weight: bold;
+}
+
+/* ==============================
+   PRICE
+============================== */
+
+.price {
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+.price-note {
+    color: #7890ac;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+/* ==============================
+   DESCRIPTION
+============================== */
+
+.description {
+    color: #607995;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+/* ==============================
+   SPECIFICATIONS
+============================== */
+
+.specifications {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+
+    background-color: white;
+    border: 1px solid #e0e7f0;
+    border-radius: 15px;
+
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.spec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.spec strong {
+    font-size: 20px;
+}
+
+.spec span {
+    color: #7890ac;
+    font-size: 12px;
+}
+
+/* ==============================
+   PRODUCT BENEFITS
+============================== */
+
+.product-benefits {
+    margin-bottom: 30px;
+}
+
+.product-benefits h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.product-benefits p {
+    color: #7890ac;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.product-benefits .delivery {
+    color: #2e6cff;
+    margin-top: 20px;
+}
+
+.product-benefits .warranty {
+    color: #607995;
+}
+
+/* ==============================
+   PURCHASE SECTION
+============================== */
+
+.purchase-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.quantity-selector {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: white;
+    border: 1px solid #dce5f0;
+    border-radius: 12px;
+
+    min-width: 140px;
+    height: 55px;
+    overflow: hidden;
+}
+
+.quantity-selector button {
+    background: transparent;
+    border: none;
+
+    color: #2e6cff;
+    font-size: 24px;
+
+    width: 45px;
+    height: 100%;
+}
+
+.quantity-selector button:hover {
+    background-color: #eaf0ff;
+}
+
+.quantity-selector span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.add-cart-button {
+    flex: 1;
+    min-height: 55px;
+
+    background-color: #2e6cff;
+    color: white;
+
+    border: none;
+    border-radius: 12px;
+
+    padding: 14px 20px;
+    font-size: 17px;
+    font-weight: bold;
+
+    transition: background-color 0.2s;
+}
+
+.add-cart-button:hover {
+    background-color: #1855e6;
+}
+
+#cart-message {
+    color: #21a56a;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.back-link {
+    display: inline-block;
+    color: #2e6cff;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+/* ==============================
+   FOOTER
+============================== */
+
+footer {
+    padding: 25px;
+    text-align: center;
+
+    background-color: white;
+    border-top: 1px solid #e0e7f0;
+
+    color: #7890ac;
+    font-size: 14px;
+}
+
+/* ==============================
+   TABLET RESPONSIVENESS
+============================== */
+
+@media (max-width: 900px) {
+
+    .top-nav {
+        gap: 18px;
+    }
+
+    .product-section {
+        gap: 25px;
+    }
+
+    .product-image img {
+        height: 350px;
+    }
+
+    .specifications {
+        padding: 15px;
+    }
+
+    .purchase-section {
+        flex-wrap: wrap;
+    }
+
+    .add-cart-button {
+        min-width: 200px;
+    }
+}
+
+/* ==============================
+   MOBILE RESPONSIVENESS
+============================== */
+
+@media (max-width: 600px) {
+
+    /* Header */
+
+    .header-container {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .logo h2 {
+        font-size: 25px;
+    }
+
+    .top-nav {
+        width: 100%;
+        justify-content: space-around;
+        gap: 10px;
+    }
+
+    .top-nav a {
+        font-size: 14px;
+    }
+
+    /* Main */
+
+    main {
+        padding: 20px;
+    }
+
+    /* Product Layout */
+
+    .product-section {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .product-image {
+        width: 100%;
+    }
+
+    .product-image img {
+        height: 300px;
+    }
+
+    .product-info {
+        width: 100%;
+    }
+
+    .product-info h1 {
+        font-size: 30px;
+    }
+
+    /* Specifications */
+
+    .specifications {
+        padding: 15px 10px;
+    }
+
+    .spec strong {
+        font-size: 17px;
+    }
+
+    .spec span {
+        font-size: 11px;
+    }
+
+    /* Purchase */
+
+    .purchase-section {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .quantity-selector {
+        width: 100%;
+    }
+
+    .add-cart-button {
+        width: 100%;
+    }
+}
+
+/* ==============================
+   SMALL MOBILE SCREENS
+============================== */
+
+@media (max-width: 380px) {
+
+    main {
+        padding: 15px;
+    }
+
+    .product-image img {
+        height: 240px;
+    }
+
+    .product-info h1 {
+        font-size: 26px;
+    }
+
+    .specifications {
+        gap: 5px;
+    }
+}

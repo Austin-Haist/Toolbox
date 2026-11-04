@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Toolbox - Order Confirmation</title>
+
+    <link rel="stylesheet" href="styles/confirmation.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+
+            <a href="home.html" class="logo">
+                <span class="logo-icon">🧰</span>
+                <h2>Toolbox</h2>
+            </a>
+
+            <nav class="top-nav" aria-label="Main navigation">
+                <a href="home.html">Home</a>
+                <a href="project.html">Projects</a>
+                <a href="tools.html">Tools</a>
+                <a href="cart.html">Cart</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <div class="confirmation-container">
+
+            <!-- Confirmation Image -->
+            <section class="confirmation-hero">
+
+                <img
+                    src="images/confirmation.png"
+                    alt="Toolbox order confirmation illustration"
+                    class="confirmation-image"
+                >
+
+                <h1>You're All Set!</h1>
+
+                <p class="confirmation-message">
+                    Your order is confirmed.
+                    Let's bring those projects to life.
+                </p>
+
+                <p class="order-number">
+                    Order #<span id="order-number">TB-10482</span>
+                </p>
+
+            </section>
+
+            <!-- Delivery Information -->
+            <section class="delivery-card">
+
+                <div class="delivery-heading">
+                    <span class="delivery-icon">🚚</span>
+
+                    <div>
+                        <p class="small-label">
+                            ESTIMATED DELIVERY
+                        </p>
+
+                        <h2>October 26–28</h2>
+                    </div>
+                </div>
+
+                <!-- Order Progress -->
+                <div class="progress-tracker">
+
+                    <div class="progress-step active">
+                        <span class="progress-circle">✓</span>
+                        <span>Confirmed</span>
+                    </div>
+
+                    <div class="progress-line"></div>
+
+                    <div class="progress-step">
+                        <span class="progress-circle">2</span>
+                        <span>Shipped</span>
+                    </div>
+
+                    <div class="progress-line"></div>
+
+                    <div class="progress-step">
+                        <span class="progress-circle">3</span>
+                        <span>Delivered</span>
+                    </div>
+
+                </div>
+
+                <p class="tracking-message">
+                    This is a demo order. Shipping updates
+                    are not connected to a delivery service.
+                </p>
+
+            </section>
+
+            <!-- Order Summary -->
+            <section class="order-summary">
+
+                <h2>Your Order</h2>
+
+                <div id="order-items">
+
+                    <!-- Products inserted using JavaScript -->
+
+                </div>
+
+                <div class="summary-divider"></div>
+
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span id="subtotal">$0.00</span>
+                </div>
+
+                <div class="summary-row">
+                    <span>Delivery</span>
+                    <span class="free-delivery">FREE</span>
+                </div>
+
+                <div class="summary-row">
+                    <span>Sales Tax (8%)</span>
+                    <span id="tax">$0.00</span>
+                </div>
+
+                <div class="summary-divider"></div>
+
+                <div class="summary-row total-row">
+                    <strong>Total</strong>
+                    <strong id="total">$0.00</strong>
+                </div>
+
+            </section>
+
+            <!-- Confirmation Message -->
+            <section class="thank-you-section">
+
+                <h2>Thanks for choosing Toolbox!</h2>
+
+                <p>
+                    We hope your next home improvement
+                    project turns out great.
+                </p>
+
+            </section>
+
+            <!-- Action Buttons -->
+            <section class="action-buttons">
+
+                <button
+                    type="button"
+                    class="track-button"
+                    id="track-button">
+                    Track Your Order →
+                </button>
+
+                <a href="project.html" class="projects-button">
+                    Back to Projects →
+                </a>
+
+                <a href="home.html" class="home-link">
+                    Return to Home
+                </a>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Toolbox. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="scripts/confirmation.js" defer></script>
+
+</body>
+</html>

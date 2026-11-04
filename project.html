@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Toolbox - Projects</title>
+
+    <link rel="stylesheet" href="styles/project.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+
+            <a href="home.html" class="logo">
+                <span class="logo-icon">🧰</span>
+                <h2>Toolbox</h2>
+            </a>
+
+            <nav class="top-nav" aria-label="Main navigation">
+                <a href="home.html">Home</a>
+                <a href="project.html" class="active">Projects</a>
+                <a href="tools.html">Tools</a>
+                <a href="#saved">Saved</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Search Section -->
+        <section class="search-section">
+
+            <div class="search-bar">
+                <span class="search-icon">⌕</span>
+
+                <input
+                    type="search"
+                    id="project-search"
+                    placeholder="Search projects"
+                    aria-label="Search projects"
+                >
+            </div>
+
+        </section>
+
+        <!-- Page Introduction -->
+        <section class="intro-section">
+
+            <h1>What are you making?</h1>
+
+            <p>
+                Pick a project. Find the right tools for the job.
+            </p>
+
+        </section>
+
+        <!-- Category Filters -->
+        <section class="category-section">
+
+            <div class="category-buttons">
+
+                <button class="category-btn" data-category="all">
+                    All Projects
+                </button>
+
+                <button class="category-btn active" data-category="home">
+                    Home
+                </button>
+
+                <button class="category-btn" data-category="garden">
+                    Garden
+                </button>
+
+                <button class="category-btn" data-category="repairs">
+                    Repairs
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- Projects -->
+        <section class="projects-section">
+
+            <div class="section-heading">
+
+                <h2 id="category-title">Home Improvement</h2>
+
+                <span class="filter-label">☷ Filters</span>
+
+            </div>
+
+            <div class="project-grid">
+
+                <!-- Project 1 -->
+                <article class="project-card" data-category="home">
+
+                    <img
+                        src="images/hangingshelf.png"
+                        alt="Floating shelves mounted on a wall"
+                    >
+
+                    <div class="card-content">
+
+                        <h3>Hang Floating Shelves</h3>
+
+                        <p>Beginner · 1–2 hours</p>
+
+                        <a href="tools.html?project=shelves">
+                            Find my tools
+                            <span>→</span>
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card" data-category="home">
+
+                    <img
+                        src="images/paint.png"
+                        alt="Paint can and paint roller"
+                    >
+
+                    <div class="card-content">
+
+                        <h3>Paint a Room</h3>
+
+                        <p>Beginner · Half a day</p>
+
+                        <a href="tools.html?project=painting">
+                            Find my tools
+                            <span>→</span>
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card" data-category="garden">
+
+                    <img
+                        src="images/planter.png"
+                        alt="Wooden planter box with plants"
+                    >
+
+                    <div class="card-content">
+
+                        <h3>Build a Planter</h3>
+
+                        <p>Intermediate · 3 hours</p>
+
+                        <a href="tools.html?project=planter">
+                            Find my tools
+                            <span>→</span>
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- Project 4 -->
+                <article class="project-card" data-category="repairs">
+
+                    <img
+                        src="images/faucet.png"
+                        alt="Faucet and plumbing repair tools"
+                    >
+
+                    <div class="card-content">
+
+                        <h3>Fix a Leaky Faucet</h3>
+
+                        <p>Beginner · 45 minutes</p>
+
+                        <a href="tools.html?project=faucet">
+                            Find my tools
+                            <span>→</span>
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+            <p id="no-results" hidden>
+                No projects found. Try another search or category.
+            </p>
+
+        </section>
+
+        <!-- Helpful Message -->
+        <aside class="tip-section">
+
+            <span class="tip-icon">✦</span>
+
+            <p>
+                A little guidance goes a long way.
+                Every project comes with a handy tool list.
+            </p>
+
+        </aside>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Toolbox. All rights reserved.</p>
+    </footer>
+
+    <!-- Simple Search and Category Filtering -->
+    <script src="scripts/project.js" defer></script>
+
+</body>
+</html>

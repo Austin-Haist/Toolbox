@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Toolbox - Shopping Cart</title>
+
+    <link rel="stylesheet" href="styles/cart.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+
+            <a href="home.html" class="logo">
+                <span class="logo-icon">🧰</span>
+                <h2>Toolbox</h2>
+            </a>
+
+            <nav class="top-nav" aria-label="Main navigation">
+                <a href="home.html">Home</a>
+                <a href="project.html">Projects</a>
+                <a href="tools.html">Tools</a>
+                <a href="cart.html" class="active">Cart</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <div class="page-heading">
+            <h1>Your Cart</h1>
+            <p>One step closer to your next project.</p>
+        </div>
+
+        <!-- Delivery Banner -->
+        <section class="delivery-banner">
+            🚚 Nice! Your order qualifies for free delivery.
+        </section>
+
+        <!-- Cart Layout -->
+        <div class="cart-layout">
+
+            <!-- Cart Items -->
+            <section class="cart-items-section">
+
+                <h2>Items in Your Cart</h2>
+
+                <div id="cart-items">
+
+                    <!-- Products added using JavaScript -->
+
+                </div>
+
+                <div id="empty-cart" class="empty-cart" hidden>
+
+                    <h3>Your cart is empty.</h3>
+
+                    <p>
+                        Browse our tools and find what
+                        you need for your next project.
+                    </p>
+
+                    <a href="tools.html" class="browse-button">
+                        Browse Tools
+                    </a>
+
+                </div>
+
+                <!-- Delivery Information -->
+                <section class="delivery-info">
+
+                    <div class="section-heading">
+                        <h2>Deliver To</h2>
+                    </div>
+
+                    <div class="delivery-details">
+                        <span class="delivery-icon">📍</span>
+
+                        <div>
+                            <h3>Delivery Address</h3>
+                            <p>
+                                Enter your delivery information
+                                during checkout.
+                            </p>
+                            <p class="delivery-date">
+                                Estimated delivery: Oct 26–28
+                            </p>
+                        </div>
+                    </div>
+
+                </section>
+
+                <!-- Payment Information -->
+                <section class="payment-info">
+
+                    <h2>Payment</h2>
+
+                    <p>
+                        💳 Payment details will be entered
+                        during checkout.
+                    </p>
+
+                </section>
+
+            </section>
+
+            <!-- Order Summary -->
+            <aside class="order-summary">
+
+                <h2>Order Summary</h2>
+
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span id="subtotal">$0.00</span>
+                </div>
+
+                <div class="summary-row">
+                    <span>Delivery</span>
+                    <span class="free-delivery">FREE</span>
+                </div>
+
+                <div class="summary-row">
+                    <span>Sales Tax (8%)</span>
+                    <span id="tax">$0.00</span>
+                </div>
+
+                <hr>
+
+                <div class="summary-row total-row">
+                    <strong>Total</strong>
+                    <strong id="total">$0.00</strong>
+                </div>
+
+                <button
+                    type="button"
+                    id="checkout-button"
+                    class="checkout-button">
+                    Checkout →
+                </button>
+
+                <p class="checkout-note">
+                    Demo checkout • No payment will be collected
+                </p>
+
+                <a href="tools.html" class="continue-shopping">
+                    ← Continue Shopping
+                </a>
+
+            </aside>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Toolbox. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="scripts/cart.js" defer></script>
+
+</body>
+</html>

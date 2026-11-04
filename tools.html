@@ -1,0 +1,315 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Toolbox - Tools</title>
+
+    <link rel="stylesheet" href="styles/tools.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+
+            <a href="home.html" class="logo">
+                <span class="logo-icon">🧰</span>
+                <h2>Toolbox</h2>
+            </a>
+
+            <nav class="top-nav" aria-label="Main navigation">
+                <a href="home.html">Home</a>
+                <a href="project.html">Projects</a>
+                <a href="tools.html" class="active">Tools</a>
+                <a href="cart.html">Cart</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Search Bar -->
+        <section class="search-section">
+
+            <div class="search-bar">
+                <span class="search-icon">⌕</span>
+
+                <input
+                    type="search"
+                    id="tool-search"
+                    placeholder="Search tools"
+                    aria-label="Search tools"
+                >
+            </div>
+
+        </section>
+
+        <!-- Introduction -->
+        <section class="intro-section">
+
+            <h1>The right tools, all here.</h1>
+
+            <p>
+                Ready for your next home improvement project.
+            </p>
+
+        </section>
+
+        <!-- Selected Project -->
+        <section class="selected-project">
+
+            <div class="project-icon">📋</div>
+
+            <div class="project-text">
+                <p>TOOLS FOR YOUR PROJECT</p>
+
+                <a href="project.html">
+                    Hang floating shelves
+                </a>
+            </div>
+
+            <a href="project.html" class="change-project">
+                Change Project
+            </a>
+
+        </section>
+
+        <!-- Tool Categories -->
+        <section class="category-section">
+
+            <div class="category-buttons">
+
+                <button class="category-btn active"
+                        data-category="all">
+                    All tools
+                </button>
+
+                <button class="category-btn"
+                        data-category="power">
+                    Power tools
+                </button>
+
+                <button class="category-btn"
+                        data-category="hand">
+                    Hand tools
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- Tool Catalog -->
+        <section class="tools-section">
+
+            <div class="section-heading">
+
+                <p id="tool-count">
+                    4 essentials for this project
+                </p>
+
+                <span class="filter-label">
+                    Filter &amp; Sort
+                </span>
+
+            </div>
+
+            <!-- Tool Grid -->
+            <div class="tool-grid">
+
+                <!-- Drill -->
+                <article class="tool-card" data-category="power">
+
+                    <div class="tool-image">
+                        <span class="top-pick">TOP PICK</span>
+
+                        <img
+                            src="images/drill.png"
+                            alt="18V cordless drill"
+                        >
+                    </div>
+
+                    <div class="card-content">
+
+                        <h3>18V Cordless Drill</h3>
+
+                        <p>Battery + charger included</p>
+
+                        <div class="rating">
+                            ★ 4.8 (128)
+                        </div>
+
+                        <div class="card-bottom">
+
+                            <span class="price">$89.00</span>
+
+                            <a href="tooldetails.html?tool=drill"
+                               class="details-button"
+                               aria-label="View cordless drill details">
+                                →
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <!-- Spirit Level -->
+                <article class="tool-card" data-category="hand">
+
+                    <div class="tool-image">
+
+                        <img
+                            src="images/level.png"
+                            alt="Blue spirit level"
+                        >
+
+                    </div>
+
+                    <div class="card-content">
+
+                        <h3>Spirit Level</h3>
+
+                        <p>24 in · Aluminum body</p>
+
+                        <div class="rating">
+                            ★ 4.7 (64)
+                        </div>
+
+                        <div class="card-bottom">
+
+                            <span class="price">$24.00</span>
+
+                            <a href="tooldetails.html?tool=level"
+                               class="details-button"
+                               aria-label="View spirit level details">
+                                →
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <!-- Tape Measure -->
+                <article class="tool-card" data-category="hand">
+
+                    <div class="tool-image">
+
+                        <img
+                            src="images/tapemeasure.png"
+                            alt="Blue tape measure"
+                        >
+
+                    </div>
+
+                    <div class="card-content">
+
+                        <h3>Tape Measure</h3>
+
+                        <p>16 ft · Easy-lock blade</p>
+
+                        <div class="rating">
+                            ★ 4.8 (92)
+                        </div>
+
+                        <div class="card-bottom">
+
+                            <span class="price">$12.00</span>
+
+                            <a href="tooldetails.html?tool=tape"
+                               class="details-button"
+                               aria-label="View tape measure details">
+                                →
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <!-- Hammer -->
+                <article class="tool-card" data-category="hand">
+
+                    <div class="tool-image">
+
+                        <img
+                            src="images/hammer.png"
+                            alt="Claw hammer with wooden handle"
+                        >
+
+                    </div>
+
+                    <div class="card-content">
+
+                        <h3>Claw Hammer</h3>
+
+                        <p>16 oz · Comfort grip</p>
+
+                        <div class="rating">
+                            ★ 4.6 (57)
+                        </div>
+
+                        <div class="card-bottom">
+
+                            <span class="price">$18.00</span>
+
+                            <a href="tooldetails.html?tool=hammer"
+                               class="details-button"
+                               aria-label="View claw hammer details">
+                                →
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+            <p id="no-results" hidden>
+                No tools match your search.
+            </p>
+
+        </section>
+
+        <!-- Next Step -->
+        <section class="next-section">
+
+            <h2>Ready to get started?</h2>
+
+            <p>
+                Explore a tool in more detail or continue
+                to your shopping cart.
+            </p>
+
+            <a href="cart.html" class="cart-button">
+                View Shopping Cart →
+            </a>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+
+        <p>&copy; 2026 Toolbox. All rights reserved.</p>
+
+    </footer>
+
+    <!-- Search and Category Filtering -->
+    <script src="scripts/tools.js" defer></script>
+
+</body>
+</html>

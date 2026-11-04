@@ -1,0 +1,640 @@
+
+/* ==============================
+   GENERAL STYLES
+============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f8fc;
+    color: #243b5a;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input {
+    font-family: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* ==============================
+   HEADER
+============================== */
+
+header {
+    background-color: white;
+    border-bottom: 1px solid #e0e7f0;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-icon {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #2e6cff;
+    border-radius: 12px;
+    font-size: 25px;
+}
+
+.logo h2 {
+    font-size: 28px;
+}
+
+.top-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.top-nav a {
+    color: #7890ac;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+.top-nav a:hover,
+.top-nav a.active {
+    color: #2e6cff;
+}
+
+/* ==============================
+   MAIN CONTENT
+============================== */
+
+main {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px;
+}
+
+/* ==============================
+   SEARCH BAR
+============================== */
+
+.search-section {
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    background-color: white;
+    border: 1px solid #dce5f0;
+    border-radius: 15px;
+    padding: 15px 20px;
+}
+
+.search-icon {
+    font-size: 28px;
+    color: #7890ac;
+}
+
+.search-bar input {
+    width: 100%;
+    min-width: 0;
+
+    border: none;
+    outline: none;
+
+    font-size: 16px;
+    color: #243b5a;
+    background: transparent;
+}
+
+/* ==============================
+   INTRODUCTION
+============================== */
+
+.intro-section {
+    margin-bottom: 30px;
+}
+
+.intro-section h1 {
+    font-size: clamp(30px, 4vw, 44px);
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.intro-section p {
+    color: #7890ac;
+    font-size: 18px;
+}
+
+/* ==============================
+   SELECTED PROJECT
+============================== */
+
+.selected-project {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    background-color: #eaf0ff;
+    border-radius: 15px;
+    padding: 20px 25px;
+
+    margin-bottom: 35px;
+}
+
+.project-icon {
+    font-size: 30px;
+}
+
+.project-text {
+    flex: 1;
+}
+
+.project-text p {
+    font-size: 12px;
+    color: #7890ac;
+}
+
+.project-text a {
+    color: #2e6cff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.project-text a:hover {
+    text-decoration: underline;
+}
+
+.change-project {
+    color: #2e6cff;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.change-project:hover {
+    text-decoration: underline;
+}
+
+/* ==============================
+   CATEGORY BUTTONS
+============================== */
+
+.category-section {
+    margin-bottom: 30px;
+}
+
+.category-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.category-btn {
+    background-color: white;
+    color: #7890ac;
+
+    border: 1px solid #dce5f0;
+    border-radius: 30px;
+
+    padding: 10px 22px;
+    font-size: 15px;
+
+    transition: background-color 0.2s,
+                color 0.2s;
+}
+
+.category-btn:hover {
+    background-color: #eaf0ff;
+    color: #2e6cff;
+}
+
+.category-btn.active {
+    background-color: #2e6cff;
+    color: white;
+    border-color: #2e6cff;
+}
+
+/* ==============================
+   TOOL SECTION
+============================== */
+
+.tools-section {
+    margin-bottom: 50px;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+
+    margin-bottom: 25px;
+}
+
+.section-heading p {
+    color: #7890ac;
+    font-size: 17px;
+}
+
+.filter-label {
+    color: #2e6cff;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* ==============================
+   TOOL GRID
+============================== */
+
+.tool-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+}
+
+/* ==============================
+   TOOL CARDS
+============================== */
+
+.tool-card {
+    background-color: white;
+    border: 1px solid #e0e7f0;
+    border-radius: 18px;
+    overflow: hidden;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+
+    transition: transform 0.2s,
+                box-shadow 0.2s,
+                border-color 0.2s;
+}
+
+.tool-card:hover {
+    transform: translateY(-4px);
+    border-color: #2e6cff;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.tool-image {
+    position: relative;
+    background-color: #dcebf5;
+}
+
+.tool-image img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.top-pick {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 1;
+
+    background-color: white;
+    color: #2e6cff;
+
+    padding: 6px 12px;
+    border-radius: 8px;
+
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* ==============================
+   CARD CONTENT
+============================== */
+
+.card-content {
+    padding: 22px;
+}
+
+.card-content h3 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.card-content p {
+    color: #7890ac;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.rating {
+    color: #2e6cff;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.card-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.details-button {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #eaf0ff;
+    color: #2e6cff;
+    border-radius: 12px;
+
+    font-size: 28px;
+
+    transition: background-color 0.2s,
+                color 0.2s;
+}
+
+.details-button:hover {
+    background-color: #2e6cff;
+    color: white;
+}
+
+/* ==============================
+   SEARCH RESULTS
+============================== */
+
+.tool-card[hidden],
+#no-results[hidden] {
+    display: none;
+}
+
+#no-results {
+    padding: 30px;
+    text-align: center;
+    color: #7890ac;
+}
+
+/* ==============================
+   NEXT STEP
+============================== */
+
+.next-section {
+    background-color: #eaf0ff;
+    border-radius: 18px;
+    padding: 35px;
+    text-align: center;
+}
+
+.next-section h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.next-section p {
+    color: #7890ac;
+    margin-bottom: 25px;
+}
+
+.cart-button {
+    display: inline-block;
+    background-color: #2e6cff;
+    color: white;
+
+    padding: 14px 28px;
+    border-radius: 12px;
+
+    font-weight: bold;
+
+    transition: background-color 0.2s;
+}
+
+.cart-button:hover {
+    background-color: #1855e6;
+}
+
+/* ==============================
+   FOOTER
+============================== */
+
+footer {
+    padding: 25px;
+    text-align: center;
+
+    background-color: white;
+    border-top: 1px solid #e0e7f0;
+
+    color: #7890ac;
+    font-size: 14px;
+}
+
+/* ==============================
+   TABLET RESPONSIVENESS
+============================== */
+
+@media (max-width: 900px) {
+
+    .top-nav {
+        gap: 18px;
+    }
+
+    .tool-grid {
+        gap: 18px;
+    }
+
+    .tool-image img {
+        height: 210px;
+    }
+
+    .card-content h3 {
+        font-size: 19px;
+    }
+}
+
+/* ==============================
+   MOBILE RESPONSIVENESS
+============================== */
+
+@media (max-width: 600px) {
+
+    /* Header */
+
+    .header-container {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .logo h2 {
+        font-size: 25px;
+    }
+
+    .top-nav {
+        width: 100%;
+        justify-content: space-around;
+        gap: 10px;
+    }
+
+    .top-nav a {
+        font-size: 14px;
+    }
+
+    /* Main */
+
+    main {
+        padding: 20px;
+    }
+
+    /* Search */
+
+    .search-section {
+        margin-bottom: 30px;
+    }
+
+    .search-bar {
+        padding: 12px 15px;
+    }
+
+    .search-bar input {
+        font-size: 14px;
+    }
+
+    /* Introduction */
+
+    .intro-section h1 {
+        font-size: 30px;
+    }
+
+    .intro-section p {
+        font-size: 16px;
+    }
+
+    /* Selected Project */
+
+    .selected-project {
+        flex-wrap: wrap;
+        padding: 18px;
+        gap: 12px;
+    }
+
+    .project-text a {
+        font-size: 16px;
+    }
+
+    .change-project {
+        width: 100%;
+        text-align: right;
+    }
+
+    /* Categories */
+
+    .category-buttons {
+        gap: 8px;
+    }
+
+    .category-btn {
+        padding: 8px 14px;
+        font-size: 13px;
+    }
+
+    /* Tool Section */
+
+    .section-heading p {
+        font-size: 14px;
+    }
+
+    .filter-label {
+        font-size: 13px;
+    }
+
+    /* Tool Grid */
+
+    .tool-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .tool-image img {
+        height: 240px;
+    }
+
+    .card-content {
+        padding: 18px;
+    }
+
+    .card-content h3 {
+        font-size: 20px;
+    }
+
+    /* Next Step */
+
+    .next-section {
+        padding: 25px 20px;
+    }
+
+    .next-section h2 {
+        font-size: 22px;
+    }
+
+    .cart-button {
+        width: 100%;
+    }
+}
+
+/* ==============================
+   SMALL MOBILE SCREENS
+============================== */
+
+@media (max-width: 380px) {
+
+    main {
+        padding: 15px;
+    }
+
+    .tool-image img {
+        height: 190px;
+    }
+
+    .category-btn {
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+}
